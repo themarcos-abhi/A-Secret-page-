@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #000000, #000428, #004e92);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 0 0 15px 15px;
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    text-align: center;
+    border-radius: 0 0 15px 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #00aaff;
+}
+
+main, #certificates {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 1000px;
+    margin: 20px auto;
+    box-shadow: 0 0 15px rgba(0, 78, 146, 0.7);
+}
+
+#certificates h2 {
+    text-align: center;
+    color: #00aaff;
+    margin-bottom: 20px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.gallery img {
+    width: 30%;
+    height: auto;
+    border: 2px solid #00aaff;
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px rgba(0, 170, 255, 0.7);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 4px 4px 15px rgba(0, 170, 255, 1);
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 15px 15px 0 0;
+}
+.typing-container {
+  text-align: center;          
+}
+
+.typing-animation {
+  display: inline-block;       
+  overflow: hidden;
+  border-right: 3px solid #00aaff;
+  white-space: nowrap;
+  width: 22ch;                 
+  animation: typing 4s steps(22), blink 0.75s step-end infinite;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 22ch }
+}
+
+@keyframes blink {
+  50% { border-color: transparent }
+}
